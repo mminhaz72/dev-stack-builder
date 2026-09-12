@@ -1,16 +1,42 @@
-# React + Vite
+# 🚀 Dev Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React, Vite, Tailwind CSS, and DaisyUI that allows developers to explore, compare, and build their ideal technology stack for projects.
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Interactive Tech Exploration:** Browse through frontend, backend, database, and tooling options seamlessly.
+- **Stack Management:** Add and remove technologies to  custom development stack in real-time.
+- **Toast Notifications:** Instant feedback alerts using `react-toastify` for all stack operations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technology That You Use
+- React.js
+- Vite
+- Tailwind CSS, DaisyUI
+- Lucide React
+- React Toastify
 
-## React Compiler
+## 📌 React Questions & Answers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**i. What is JSX, and why is it used in React?**
+- JSX (JavaScript XML) is a syntax extension for JavaScript that allows us to write HTML-like structures directly within JavaScript code. It is used in React because it makes the code much cleaner, readable, and easier to write UI components.
 
-## Expanding the ESLint configuration
+**ii. What is the difference between props and state?**
+- Props (properties) are read-only inputs passed down from parent to child components to configure them. State is a local, mutable data store managed inside the component itself that triggers a re-render whenever its value changes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**iii. What does the useState hook do, and where did you use it in this project?**
+- `useState` is a React Hook that lets functional components add and manage state variables. In this project, it was used to manage the selected technology stack array and toggle loading/UI states.
+
+**iv. What does the useEffect hook do, and why did you need it to load the JSON data?**
+- `useEffect` is a React Hook used for handling side effects like data fetching, subscriptions, or manually changing the DOM. It was needed to fetch and load the technologies from the JSON file when the component first mounts.
+
+**v. Why does every item in a `.map()` list need a unique key prop?**
+- Every item in a `.map()` list needs a unique `key` prop so React can efficiently identify which items have changed, been added, or removed, avoiding unnecessary re-renders and rendering bugs.
+
+**vi. What is conditional rendering? Show one place you used it (example: the empty stack message).**
+- Conditional rendering is the process of displaying different UI elements based on specific conditions (using ternary operators `? :` or logical `&&`). For example, it was used to show an "empty stack" message when no technologies are added to the stack yet.
+
+**vii. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?**
+- Data is passed from a parent to a child using **props**. A child sends data or triggers an action back to the parent by calling a **callback function** passed down via props from the parent.
+
+## 👨‍💻 Author
+**MD MINHAZ**
+- GitHub: [mminhaz72](https://github.com/mminhaz72)
